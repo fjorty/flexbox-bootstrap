@@ -2,22 +2,22 @@
 	background: #00AEFF;
 	padding: 30px 0;
 }
-.left {
+.left-wrapper {
 	background: #009BDD;
 }
-.right {
+.right-wrapper {
 	background: #36C3FF;
 }
-.left1,
-.right1 {
+.left,
+.right {
 	height: 65px;
 }
 @media (max-width: 576px) {
 	.header {
 		padding: 5px 0;
 	}
-	.left,
-	.right {
+	.left-wrapper,
+	.right-wrapper {
 		margin: 5px 10px;
 		height: 30px;
 	}
@@ -26,13 +26,15 @@
 	background: #FF5607;
 }
 .sidebar-wrapper {
-	background: #FF5607;
 	padding: 25px 25px 15px 20px;
 }
 .sidebar-elem {
 	background: #E84900;
 	height: 45px;
 	margin-bottom: 15px;
+}
+.sidebar-elem:last-child {
+	margin-bottom: 0;
 }
 @media (max-width: 576px) {
 	.sidebar-wrapper {
@@ -47,28 +49,50 @@
 	height: 210px;
 }
 .text-elem,
-.text-elem2 {
+.last-elem {
 	background: #CECECE;
 	margin-top: 10px;
 	height: 25px;
 }
-.text-elem1 {
+.first-elem {
 	background: #9D9D9D;
 	margin-top: 0;
 	height: 30px;
 }
-.text-elem2 {
+.last-elem {
 	margin-bottom: 10px;
 }
 @media (max-width: 576px) {
 	.main-content {
 		padding: 0;
 	}
-	.text {
-		padding-top: 15px;
+	.first-elem {
+		margin-top: 15px;
 	}
 }
 .footer {
-	height: 100px;
-	background: #FF9835;
+	padding: 15px 0;
+	background: #00D169;
+}
+.footer-wrapper {
+	background: #02B15A;
+	margin: 5px;
+	padding: 25px 25px;
+}
+.footer-elem {
+	background: #038042;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.footer-elem:last-child {
+	margin-bottom: 0;
+}
+@media (max-width: 576px) {
+	.footer-wrapper {
+		margin:10px 15px;
+	}
+	.footer-elem {
+		width: 55%;
+		margin-bottom: 0;
+	}
 }
